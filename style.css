@@ -108,8 +108,11 @@
 
 video {
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh; /* ビューポートの高さを100%に固定 */
+  object-fit: cover; /* アスペクト比を維持しつつ要素全体を覆う */
   z-index: -10;
 }
+
